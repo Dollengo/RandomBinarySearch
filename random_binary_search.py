@@ -15,11 +15,11 @@ def binary_search(list, first_index, last_index, searched_value):
         return f"{searched_value} not found."
 
 attempts = 1
-value_sought = 97
+value_sought = input((int)"Value sought: ")
 result = f"{value_sought} not found."
 
 while result == f"{value_sought} not found.":
-    ordered_vector = sorted([random.randint(0, 1000) for _ in range(10)])
+    ordered_vector = sorted([random.randint(0, 1000000000) for _ in range(10)])
     result = binary_search(ordered_vector, 0, len(ordered_vector) - 1, value_sought)
     print(result, "Attempts: ", attempts)
     attempts += 1
